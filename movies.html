@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Ticket</title>
     <style>
+        body{
+            background-color: rgba(254, 211, 126, 0.21);
+            border: 2px solid black;
+            padding: 20px;
+        }
         .title{
             text-align: center;
         }
        .images{
-        margin-left: 50px;
+        margin-left: 74px;
        }
        .main-section{
         display: flex;
@@ -22,14 +27,16 @@
         letter-spacing: 1.15px;
         line-height: 25px;
        }
+
        button{
-        margin-right: 35px;
+        margin-left: 40%;
        }
     </style>
 </head>
 <body>
     
         <h1 class="title">Movies Ticket Application Form</h1>
+        <br>
 
         <form action="">
 
@@ -42,15 +49,15 @@
            </div>
             <br><br>
 
-            <h2 class="title">Ticket Form</h2>
+            <h2 class="title">Ticket Booking</h2>
             <br><br>
 
             <div class="main-section">
 
                 <div class="content">
 
-                    <h3>Personal Details :</h3>
-                    <br><br>
+                    <h3 style="color: rgb(255, 0, 0);">Personal Details :</h3>
+                    <br>
 
                     <label>Reservation Name :</label>
                     <input type="text" placeholder="first" required minlength="4">
@@ -74,7 +81,7 @@
                     <textarea name="" id="" rows="4" cols="28" placeholder="Enter address"></textarea>
                     <br><br>
 
-                    <h3>Movie Details :</h3>
+                    <h3 style="color: rgb(216, 12, 152);">Movie Details :</h3>
                     <br>
                     
                     <label >Select Movies :</label>
@@ -138,9 +145,11 @@
                     </select>
                     <br><br>
 
+                    <button>Submit</button>
+
                 </div>
 
-                 <button>Submit</button>
+                 
                 
             </div>
         
