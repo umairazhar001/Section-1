@@ -4,55 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Ticket</title>
+    <style>
+        .title{
+            text-align: center;
+        }
+       .images{
+        margin-left: 50px;
+       }
+       .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+       }
+       .content{
+        letter-spacing: 1.15px;
+        line-height: 25px;
+       }
+       button{
+        margin-right: 35px;
+       }
+    </style>
 </head>
 <body>
     
-        <h1>Movies Ticket Application Form</h1>
+        <h1 class="title">Movies Ticket Application Form</h1>
 
         <form action="">
 
-            <img src="popcorn.avif" alt="popcorn" width="140px">
+           <div class="images">
+            <img src="4.jpeg" alt="popcorn" width="300px" height="200px">
+            <img src="1.jpeg" alt="popcorn" width="300px" height="200px">
+            <img src="2.jpeg" alt="popcorn" width="300px" height="200px">
+            <img src="3.jpeg" alt="popcorn" width="300px" height="200px">
+            <img src="5.jpeg" alt="popcorn" width="300px" height="200px">
+           </div>
             <br><br>
 
-            <label>Movies Title :</label>
-            <input type="text" placeholder="Enter movies" required>
+            <h2 class="title">Ticket Form</h2>
             <br><br>
 
-            <label>Date you want to attend :</label>
-            <input type="number" placeholder="Enter date" required>
-            <br><br>
+            <div class="main-section">
 
-            <label>What time suits you?</label>
-            <input type="number" placeholder="Enter time" required>
-            <br><br>
+                <div class="content">
 
-            <label>No of ticket for adults :</label>
-            <input type="number" placeholder="Enter no of tickets">
-            <br><br>
+                    <h3>Personal Details :</h3>
+                    <br><br>
 
-            <label>No of ticket for children :</label>
-            <input type="number" placeholder="Enter no of tickets">
-            <br><br>
+                    <label>Reservation Name :</label>
+                    <input type="text" placeholder="first" required minlength="4">
+                    <input type="text" placeholder="second" required minlength="4">
+                    <br><br>
 
-            <label>Email :</label>
-            <input type="email" placeholder="Enter email" required>
-            <br><br>
+                    <label>Gender :</label>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <br><br>
 
-            <label>Reservation Name :</label>
-            <input type="text" placeholder="first" required minlength="4">
-            <input type="text" placeholder="second" required minlength="4">
-            <br><br>
+                    <label>Phone no :</label>
+                    <input type="number" placeholder="Enter phone no" required max="10">
+                    <br><br>
 
-            <label>Gender :</label>
-            <input type="radio" name="gender"> Male
-            <input type="radio" name="gender"> Female
-            <br><br>
+                    <label>Email :</label>
+                    <input type="email" placeholder="Enter email" required minlength="5">
+                    <br><br>
 
-            <label >Address :</label>
-            <textarea name="" id="" rows="4" cols="28" placeholder="Enter address"></textarea>
-            <br><br>
+                    <label >Address :</label>
+                    <textarea name="" id="" rows="4" cols="28" placeholder="Enter address"></textarea>
+                    <br><br>
 
-            <button>Submit</button>
+                    <h3>Movie Details :</h3>
+                    <br>
+                    
+                    <label >Select Movies :</label>
+                    <input type="text" list="movies">
+
+                    <datalist id="movies">
+                        <option>Spider Man</option>
+                        <option>Wolverine</option>
+                        <option>Mr X</option>
+                        <option>Iron Man</option>
+                        <option>The Hulk</option>
+                        <option>Thor Ragnarok</option>
+                        <option>Stranger Things</option>
+                        <option>Doctor Strange</option>
+                        <option>Captain America </option>
+                    </datalist>
+                    <br><br>
+
+                    <label >Movie Language :</label>
+                    <select>
+                        <option>Hindi</option>
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                        <option>South Korean</option>
+                        <option>Japanese</option>
+                        <option>Tamil</option>
+                        <option>Telugu</option>
+                        <option>Kannada</option>
+                    </select>
+                    <br><br>
+
+                    <label>Movies type :</label>
+                    <input type="radio" name="2D"> 2D
+                    <input type="radio" name="3D"> 3D
+                    <br><br>
+
+                    <label>Date to attend the Show :</label>
+                    <input type="date" >
+                    <br><br>
+
+                    <label>Timing to attend the Show :</label>
+                    <input type="time" >
+                    <br><br>
+
+                    <label>No of ticket :</label>
+                    <input type="number" placeholder="Enter no of tickets" min="1" max="5">
+                    <br><br>
+
+                    <label >City where you wanted to watch Show :</label>
+                    <select>
+                        <option>Lucknow</option>
+                        <option>pune</option>
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Hyderabad</option>
+                        <option>Kerala</option>
+                        <option>Odisha</option>
+                        <option>Gujarat</option>
+                        <option>Kashmir</option>
+                    </select>
+                    <br><br>
+
+                </div>
+
+                 <button>Submit</button>
+                
+            </div>
         
          </form>
 </body>
