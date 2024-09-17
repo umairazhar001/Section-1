@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ussing Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            background-image: url(social-1.jpg);
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div class="border border-red-500 w-1/4 rounded-lg p-6 shadow-xl bg-white/60 backdrop-blur-sm">
+        <h3 class="text-center font-bold text-3xl my-4 ">Sign form
+
+        </h3>
+        <form>
+            <label> Email Address</label>
+            <input type="text" class="block border border-gray-600 p-2 w-full rounded-lg mb-8">
+            <label> Password</label>
+            <input type="text" class="block border border-gray-600 p-2 w-full rounded-lg mb-8">
+            <a href="#" class="font-bold text-blue-600 hover:text-blue-300 hover:underline">Forgot Password?</a>
+            <button class="block bg-blue-400 text-white p-2 w-full mt-5 rounded">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
