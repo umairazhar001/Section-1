@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        section{
+            background-image: url(images/simple.jpg);
+        }
+    </style>
 </head>
-<body class="flex justify-center items-center h-screen">
+<body>
     
-<div class="grid grid-col-12 border p-6 w-1/2">
-    <div class="border border-green-500 col-span-4">
+    <section class=" h-screen flex justify-center items-center ">
 
-    </div>
+        <div class=" w-[34%] h-[45%] flex p-3 shadow-2xl bg-white rounded-lg">
 
-    <div class="border border-blue-500 col-span-8">
-        <p >Free shipping</p>
-    </div>
-</div>
+            <div class=" w-[35%]">
+                <img src="images/heady.png" alt="">
+            </div>
+
+            <div class=" w-[65%] overflow-auto">
+                <button class="rounded-xl bg-black text-white text-xs py-1 px-2 mb-2">Free shipping</button>
+                <h3 class="font-bold text-2xl mb-5 leading-6">Lorem ipsum, dolor amet consectetur .</h3>
+                <del class="font-semibold ">1599</del>
+                <h1 class="text-3xl font-bold mt-2">799,-</h1>
+                <p class="text-xs font-light mt-2 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, nihil!</p>
+                <button class="text-white text-center bg-red-700 block w-[100%] rounded-lg py-2 mb-3 ">Add to Cart</button>
+                <li class="text-[13px] mb-6">50+ pics in stock</li>
+                <button class="border border-gray-400 rounded mr-3 py-2 px-3">♔ Add to cart</button>
+                <button class="border border-gray-400 rounded py-2 px-3">♡ Add to wishlist</button>
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 </html>
